@@ -1,5 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  font-style: normal;
+}
+
+/* navbar starts here */
+
+.navbar {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  width: 50%;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  width: 86px;
+  height: 40px;
+  padding-right: 20px;
+}
+
+.logo-text {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu {
+  width: 50%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu > li {
+  list-style: none;
+  padding-right: 30px;
+}
+
+.menu > li > a {
+  color: #3c354f;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu > button {
+  padding: 18px 24px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  cursor: pointer;
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.icon-youtube {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 30px;
+  color: red;
+}
+
+.icon-tiktok {
+  font-size: 24px;
+}
+
+/* navbar ends here */
+
+/* responsive styles for mobile starts here */
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .menu,
+  .menu > li {
+    flex-direction: column;
+  }
+
+  .menu,
+  .logo {
+    width: 100%;
+  }
+
+  .menu {
+    margin-top: 20px;
+  }
+
+  .menu > li {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 0;
+  }
+
+  .menu > button {
+    margin: 30px 0 0;
+    /* padding: 10px 0; */
+    justify-content: center;
+  }
+}
+
+/* responsive styles for tablet starts here */
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  .navbar,
+  .menu,
+  .menu > li {
+    flex-direction: column;
+  }
+
+  .logo {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .menu,
+  .logo {
+    width: 100%;
+  }
+
+  .menu {
+    margin-top: 20px;
+  }
+
+  .menu > li {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 0;
+  }
+
+  .menu > button {
+    margin: 30px 0 0;
+    /* padding: 10px 0; */
+    justify-content: center;
+  }
 }
